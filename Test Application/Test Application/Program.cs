@@ -10,7 +10,13 @@ namespace Test_Application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Joku teksti");
+            Console.WriteLine("Anna joku numero: "); //Sama kuin "cout << "
+
+            int luku;
+
+            luku = int.Parse(Console.ReadLine()); //Sama kuin "cin >> "
+
+            Console.WriteLine("Annoit luvun: " + luku); //Sama kuin "cout << ", ja + on <<
         }
     }
 }
