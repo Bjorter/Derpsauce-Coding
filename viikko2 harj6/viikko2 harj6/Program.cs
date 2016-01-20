@@ -33,6 +33,8 @@ namespace viikko2_harj6
                     }
 
                     else Console.WriteLine("Rahat eivät riitä!");
+
+                    account.PrintData();
                 }
             }
         }
