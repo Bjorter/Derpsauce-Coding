@@ -30,11 +30,12 @@ namespace viikko2_harj6
                     if (account.Funds >= 1.99F)
                     {
                         account.Funds -= 1.99F;
+                        account.PrintData();
                     }
 
                     else Console.WriteLine("Rahat eivät riitä!");
-
                     account.PrintData();
+
                 }
             }
         }
