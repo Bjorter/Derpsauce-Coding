@@ -17,6 +17,24 @@ namespace viikko2_harj6
             account.Games = 234;
 
             account.PrintData();
+
+            int valinta;
+
+            while (true)
+            {
+                Console.WriteLine("Haluatko ostaa pelin? (1,99€) \n1:Kyllä\n2.Ei");
+                valinta = int.Parse(Console.ReadLine());
+
+                if (valinta == 1)
+                {
+                    if (account.Funds >= 1.99F)
+                    {
+                        account.Funds -= 1.99F;
+                    }
+
+                    else Console.WriteLine("Rahat eivät riitä!");
+                }
+            }
         }
     }
 }
