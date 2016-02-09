@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Ikkuna.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ikkuna"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="calculate" Content="Calculate" HorizontalAlignment="Left" Margin="642,392,0,0" VerticalAlignment="Top" Click="calculate_Click"/>
+        <TextBlock x:Name="heightBlock" HorizontalAlignment="Left" Margin="479,154,0,0" TextWrapping="Wrap" Text="Window Height (cm)" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lengthBlock" HorizontalAlignment="Left" Margin="474,234,0,0" TextWrapping="Wrap" Text="Window Length (cm)" VerticalAlignment="Top"/>
+        <TextBlock x:Name="thicknessBlock" HorizontalAlignment="Left" Margin="474,314,0,0" TextWrapping="Wrap" Text="Frame Thickness (cm)" VerticalAlignment="Top"/>
+        <TextBox x:Name="height" HorizontalAlignment="Left" Margin="642,154,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBox x:Name="length" HorizontalAlignment="Left" Margin="642,234,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBox x:Name="thickness" HorizontalAlignment="Left" Margin="642,314,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="windowArea" HorizontalAlignment="Left" Margin="422,476,0,0" TextWrapping="Wrap" Text="Window Surface Area (cm^2)" VerticalAlignment="Top"/>
+        <TextBlock x:Name="windowResult" HorizontalAlignment="Left" Margin="642,476,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="glassArea" HorizontalAlignment="Left" Margin="442,552,0,0" TextWrapping="Wrap" Text="Glass Surface Area (cm^2)" VerticalAlignment="Top"/>
+        <TextBlock x:Name="glassResult" HorizontalAlignment="Left" Margin="642,552,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="frameCircum" HorizontalAlignment="Left" Margin="442,632,0,0" TextWrapping="Wrap" Text="Frame Circumference (cm)" VerticalAlignment="Top"/>
+        <TextBlock x:Name="frameResult" HorizontalAlignment="Left" Margin="642,632,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
